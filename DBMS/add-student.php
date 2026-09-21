@@ -97,7 +97,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
         </header>
 
-        <a href="students.php" class="back-button"> ← Back to Students </a>
+        <div style="margin-bottom: 20px;">
+            <a href="students.php" style="color: #2563eb; text-decoration: none; font-size: 14px; font-weight: 600;">←
+                Back to Students</a>
+        </div>
+
 
         <?php if (!empty($error)): ?>
             <p style="color: red; background: #ffe6e6; padding: 10px; border-radius: 5px; margin-bottom: 15px;">

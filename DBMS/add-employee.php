@@ -94,12 +94,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <p>Fill out the form below to register a new employee</p>
       </div>
     </header>
+    <div style="margin-bottom: 20px;">
+      <a href="employee.php" style="color: #2563eb; text-decoration: none; font-size: 14px; font-weight: 600;">← Back to
+        Employee</a>
+    </div>
 
-    <a href="employee.php" class="back-button"> ← Back to Employees </a>
 
     <?php if (!empty($error)): ?>
       <p style="color: red; background: #ffe6e6; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
-        <?= htmlspecialchars($error) ?></p>
+        <?= htmlspecialchars($error) ?>
+      </p>
     <?php endif; ?>
 
     <form method="POST" action="add-employee.php" style="background: #fff; padding: 25px; border-radius: 8px;">
